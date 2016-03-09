@@ -1,0 +1,72 @@
+[
+
+	{
+		"filename"	: "vendor.css",
+		"files": [
+			"custom/bootstrap.min.css",
+			"fontawesome/css/font-awesome.min.css",
+			"angular/css/angular-block-ui.min.css",
+			"bootstrap/css/bootstrap-multiselect.css",
+			"custom/animate.min.css",
+			"fancybox/jquery.fancybox.css",
+			"nifty/css/nifty.min.css",
+	        "nifty/css/pace.min.css",
+			"nifty/plugins/chosen/chosen.min.css",
+			"nifty/plugins/summernote/summernote.min.css",
+
+			"photoswipe/photoswipe.css",
+			"photoswipe/photoswipe-default-skin.css",
+			"nanoscroller/nanoscroller.css",
+			"allmighty-autocomplete/allmighty-autocomplete.css"
+		]
+	},
+	{
+		"filename"	: "vendor.js",
+		"files": [
+			"jquery/jquery.min.js",
+			"jquery/jquery-ui.min.js",
+			"html5shiv/html5shiv.min.js",
+			"html5shiv/html5shiv-printshiv.min.js",
+			"respond/respond.min.js",
+			"bootstrap/js/bootstrap.min.js",
+			"bootstrap/js/bootstrap-multiselect.js",
+			"angular/js/angular.min.js",
+			"angular/js/angular-route.min.js",
+			"angular/js/angular-ui-router.min.js",
+			"angular/js/angular-resource.min.js",
+			"angular/js/angular-sanitize.min.js",
+			"angular/js/angular-filter.min.js",
+			"angular/js/angular-block-ui.min.js",
+			"angular/js/ui-bootstrap-0.13.0.min.js",
+			"angular/js/ui-bootstrap-tpls-0.13.0.min.js",
+			"angular/js/ui-sortable.js",
+			"angular/js/angular-chosen.js",
+			"angular/js/angular-ng-grid-flexible-height.js",
+			"angular/js/angular-messages.min.js",
+			"underscore/underscore.min.js",
+			"nifty/js/nifty.min.js",
+	        "nifty/js/custom.js",
+	        "nifty/js/socketme/socket.io.js",
+			"nifty/plugins/chosen/chosen.jquery.min.js",
+			"nifty/plugins/summernote/summernote.min.js",
+			"nifty/plugins/bootbox/bootbox.min.js",
+			"fancybox/jquery.fancybox.pack.js",
+			"maskedinput/jquery.maskedinput.min.js",
+			"photoswipe/photoswipe.min.js",
+			"photoswipe/photoswipe-ui-default.min.js",
+			"nanoscroller/jquery.nanoscroller.min.js",
+			"angular/js/angular-scrollable.js",
+			"angular/js/ui-codemirror.min.js",
+			"panzoom/jquery.panzoom.min.js",
+			"allmighty-autocomplete/allmighty-autocomplete.js"
+		]
+	},
+	{
+		"filename"	: "snapsvg.js",
+		"files": [
+			"vendor/snapsvg/snap.svg-min.js",
+			"vendor/snapsvg/snap-freetransform.js"
+		]
+	},
+
+]

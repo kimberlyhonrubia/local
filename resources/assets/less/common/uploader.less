@@ -1,0 +1,159 @@
+
+@import "vars.less";
+@import "mixins.less";
+
+// Default font size
+@size-contents : 11px; // for body contents
+@size-title    : 13px; // title
+
+.wrap-uploader {
+
+	&:before, &:after {
+		clear:both;
+	}
+
+	.title {
+		font-weight: 500;
+		font-size: 20px;
+		color: @color-main;
+		margin-bottom: 4px;
+	}
+
+	.uploader {
+		margin: 0 26px 20px 0;
+		width: 98%;
+
+		.drop-zone {
+		    height: 200px;
+		    border: 1px dashed @color-main;
+		    text-align: center;
+		    position: relative;
+		    font-size: 20px;
+		    color: lighten(@color-black, 30%);
+		    overflow: hidden;
+			.cross-browser(border-radius, 10px);
+
+			&.custom-uploader-dropzone {
+				margin: 10px;
+			}
+
+		    &:hover {
+		    	border: 1px dashed darken(@color-main, 20%);
+		        color: lighten(@color-black, 30%);
+		    }
+
+		    &.progressbar {
+
+		    	.progress {
+					height: 8px;
+					margin-bottom: 6px;
+					.cross-browser(border-radius, 3px);
+					box-shadow: none;
+					background-color: @color-white;
+					width: 90%;
+					margin: auto;
+					border: 1px solid darken(@color-white, 20%);
+
+				}
+		    }
+
+		    &.success {
+		    	background-color: lighten(@color-black, 80%);
+
+			    .content {
+		    		margin-top: 45px;
+
+				    &:after {
+						content: '';
+				    }
+
+			    	.check-circle {
+			    		border: 2px solid lighten(@color-black, 20%);
+			    		.cross-browser(border-radius, 16px);
+						width: 32px;
+						height: 32px;
+						background-color: darken(@color-white, 5%);
+						margin: auto;
+
+			    		i {
+			    			font-size: 20px;
+			    			margin-top: 4px;
+			    		}
+			    	}
+
+			    	.filename {
+			    		color: @color-black;
+			    		font-weight: 500;
+			    	}
+
+			    	.btn-change {
+			    		color: @color-blue;
+			    		font-size: @size-contents + 1;
+			    		cursor: pointer;
+			    	}
+
+			    }
+		    }
+
+		    .img-arrow {
+				position: absolute;
+				font-size: 210px;
+				top: -53px;
+				right: -53px;
+				z-index: 1;
+				.opacity(10);
+		    }
+
+		    .content {
+		    	margin-top: 64px;
+				z-index: 2;
+				span {
+		    		font-size: 26px;
+					font-weight: bold;
+					color: darken(@color-white, 20%);
+				}
+				.btn-browse {
+				    cursor: pointer;
+				    .gradient(lighten(@color-main, 5%), @color-main, darken(@color-main, 5%));
+		            border: 1px solid darken(@color-main, 3%);
+		            color: @color-white;
+					position: relative;
+					width: 132px;
+					margin: auto;
+					font-size: 14px;
+					border-radius: 3px;
+					line-height: 22px;
+					font-weight: 600;
+
+
+				    &:hover {
+				        .gradient(@color-main, darken(@color-main, 3%), darken(@color-main, 8%));
+				    }
+
+				    .input-uploader {
+				        position: absolute;
+				        cursor: pointer;
+				        left: 0px;
+				        top: 0px;
+				        .opacity(0);
+						height: 23px;
+						width: 132px;
+				    }
+
+				}
+		    }
+
+
+		}
+
+	    .submit-zipfile {
+	    	font-size 	 : @size-contents - 2;
+	 		color 	  	 : @color-red;
+	 		font-weight	 : normal;
+	 		text-align: center;
+	 		margin-top: 6px;
+	    }
+
+	}
+
+}

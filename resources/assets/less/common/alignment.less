@@ -1,0 +1,164 @@
+@import "../common/vars.less";
+@import "../common/mixins.less";
+
+.main-container-alignment {
+    text-align: right;
+    .table{
+        thead{
+            th{
+                text-align: right;
+            }
+        }
+    }
+    input{
+        text-align: right;
+    }
+    .header-logo{
+        float: right !important;
+    }
+    .input-search{
+        .header-search {
+            padding-right: 10px;
+        }
+        .fa-search{
+            position: absolute;
+            pointer-events: none;
+            top: 10px;
+            right: inherit !important;
+            margin-right: inherit !important; 
+            left: 10px;
+        }
+    }
+    .style-button-label{
+        float: right !important;
+    }
+    .form-radio{
+        &.form-normal{
+            text-align: right;
+            &:before{
+                right: 0;
+            }
+            &:after{
+                right: 4px;
+            }
+            span{
+                padding-right: 20px;
+            }
+        }
+    }
+    .bord-all{
+        &.pad-all{
+            text-align: right;
+        }
+    }
+    .listing-data-header{
+            padding-right: 15px;
+    }
+    .address-table{
+        table{
+            thead {
+                tr{
+                    th{
+                        &:first-child{
+                            border-right: 0px;
+                        }
+                        &:last-child{
+                            border-right: 1px solid darken(@color-main, 10%);
+                        }
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td:last-child{
+                        border-right: 1px solid darken(@color-main, 10%);
+                    }
+                }
+            }
+        }
+    }
+    .printarabia-print-but{
+        li{
+            float: right;
+        }
+    }
+    .input-group{
+        .input-group-addon{
+            border-right: 1px solid darken(@color-white, 10%);
+            border-left: 0;
+        }
+    }
+    .has-error{
+        .input-group-addon{
+            border-right: 1px solid darken(@color-red, 10%);
+            border-left: 0;
+        }
+    }
+    .bill-credit-right{
+        float: right;
+    }
+
+    .modal-dialog,.fancybox-inner{
+        .btn{
+            padding: 0 0 0 10px;
+        }
+        .btn-labeled:before{
+            margin-left: 10px;
+            margin-right: 0px;
+            padding: 5px 15px;
+            right: 0px;
+        }
+    }
+    .profile-header{
+        .header-menu{
+            float: right !important;
+            &.user-profile{
+                #user-avatar{
+                    float: right !important;
+                }
+            }
+            &.user-cloud-data{
+                padding-left: 10px !important;
+                padding-right: 0 !important;
+                .cloud-data-icon{
+                    float: right !important;
+                }
+                .cloud-status{
+                    margin-left: 5px;
+                    text-align: right !important;
+                }
+            }
+            &.user-address-book{
+                border-right: 1px solid;    
+            }
+        }
+    }
+    .login-search-container{
+        .login-search{
+            float: left !important;
+        }
+    }
+    .terms{
+        .content{
+            ul{
+                li:before{
+                        margin-left: 3px !important;
+                        margin-right: 0px !important;
+                }
+            }
+        }
+    }
+    .select{
+        &:after{
+            right: inherit !important;
+            left: 7px !important;
+        }
+    }
+    .uploader{
+        .label-or{
+            &:after{
+                right: -3px !important;
+            }
+        }
+    }
+}

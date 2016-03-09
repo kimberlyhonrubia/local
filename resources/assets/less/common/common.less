@@ -1,0 +1,183 @@
+
+@import "vars.less";
+
+/*
+ * CUSTOMER COMMENTS
+ */
+
+.customer-comments {
+	&.conversation-box{
+		height: 230px;
+	    border: 1px dashed #CAC8C8;
+	    overflow-y: auto;
+	    overflow-x:	hidden;
+	    background-color: #F8F8F8;
+	    &::-webkit-scrollbar {
+		    -webkit-appearance: none;
+		}
+
+		&::-webkit-scrollbar:vertical {
+		    width: 11px;
+		}
+
+		&::-webkit-scrollbar:horizontal {
+		    height: 11px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+		    border-radius: 8px;
+		    border: 2px solid white; /* should match background, can't be transparent */
+		    background-color: rgba(0, 0, 0, .5);
+		}
+
+		&::-webkit-scrollbar-track { 
+		    background-color: #fff; 
+		    border-radius: 8px; 
+		} 
+		.timeline{
+			.col-xs-2 {
+			    &.pull-right{
+					right: -20px;
+				}
+		    }
+		    .col-xs-2{
+		    	&.pull-left{
+		    		left: 25px;
+		    	}
+		    }
+			.timeline-entry{
+				&.timeline-right{
+					.timeline-label{
+						background-color: @color-white;
+					}
+				}
+			}
+		}
+	}
+	&.profile-comment{
+		img.staff-image{
+			margin-left: -25px;
+		}
+	}
+	.timeline {
+	    padding: 4px 0;
+	    background-color: transparent;
+	    &:before,
+	    &:after {
+	        display: none;
+	    }
+	    .col-xs-2 {
+		    &.pull-right{
+				right: 8px;
+			}
+	    }
+	    .item-no-label {
+	        position: relative;
+	        border-bottom: 2px solid darken(@color-white, 30%);
+	        margin: 12px 2px;
+	        .item-label {
+	            position: absolute;
+	            left: 36%;
+	            top: -7px;
+	            background-color: @color-white;
+	            padding: 0 4px;
+	        }
+
+	    }
+
+	    .timeline-entry {
+
+	        .timeline-label {
+	            font-size: 11px;
+	            padding: 4px;
+	            background-color: transparent;
+	            margin: 8px 10px;
+	            &:before,
+	            &:after {
+	                border: none;
+	                margin: 0;
+	            }
+	        }
+
+	        &.timeline-left {
+	            margin: 5px 16px 5px 0;
+
+	            .timeline-label {
+	                background-color: darken(@color-white, 3%);
+
+	                &:before,
+	                &:after {
+	                    right: auto;
+	                    left: -1px;
+	                }
+	                &:before {
+	                    border-top: 10px solid transparent;
+	                    border-bottom: 10px solid transparent;
+	                    border-right: 10px solid darken(@color-white, 30%);
+	                    margin: 14px 0 0 -9px;
+	                }
+	                &:after {
+	                    border-top: 9px solid transparent;
+	                    border-bottom: 9px solid transparent;
+	                    border-right: 9px solid darken(@color-white, 3%);
+	                    margin: 15px 0 0 -8px;
+	                }
+
+	            }
+
+	        }
+	        &.timeline-right {
+	            margin: 5px 0 5px 16px;
+
+	            .timeline-label {
+
+	                &:before,
+	                &:after {
+	                    left: auto;
+	                    right: -1px;
+	                }
+	                &:before {
+	                    border-top: 10px solid transparent;
+	                    border-bottom: 10px solid transparent;
+	                    border-left: 10px solid darken(@color-white, 30%);
+	                    margin: 14px -9px 0 0;
+	                }
+	                &:after {
+	                    border-top: 9px solid transparent;
+	                    border-bottom: 9px solid transparent;
+	                    border-left: 9px solid @color-white;
+	                    margin: 15px -8px 0 0;
+	                }
+	            }
+
+	        }
+
+	    }
+	}
+}
+
+
+/*
+ * CHOSEN CUSTOM
+ */
+.chosen-custom {
+
+	&.chosen-mar-btm {
+		.chosen-container {
+			margin-bottom: 0;
+		}
+	}
+
+	// SEARCH
+		.chosen-search {
+			padding: 4px;
+			input {
+				height: 28px !important;
+			    border: 1px solid darken(@color-white, 10%) !important;
+			    &:focus {
+			    	border-color: darken(@color-white, 20%);
+			    }
+			}
+		}
+
+}

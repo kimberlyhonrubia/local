@@ -1,0 +1,15 @@
+[
+
+	{
+		"filename"	: "base.js",
+		"files": [
+			"common/base.coffee"
+		]
+	},
+	{
+		"filename"	: "angular_modules/angular_modules.js",
+		"files": [
+			"common/angular_modules/httpFactory.coffee"
+		]
+	}
+]

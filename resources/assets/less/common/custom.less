@@ -1,0 +1,526 @@
+@import "vars.less";
+@import "mixins.less";
+
+/*
+ * DEFAULT
+ */
+    .pad0 {
+        padding: 0 !important;
+    }
+
+    .hand {
+        cursor: pointer;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .full-width {
+        width: 100% !important;
+    }
+
+    .overflow-hidden {
+        overflow: hidden !important;
+    }
+    .link-disabled {
+        pointer-events: none;
+        &.btn {
+            background-color: @color-white;
+            border-color: darken(@color-white, 25%);
+            color: darken(@color-white, 30%);
+        }
+    }
+
+
+/*
+ * BACKGROUND COLOR
+ */
+
+    .background-color-main {
+        background-color: @color-main !important;
+    }
+
+    .background-color-white {
+        background-color: @color-white !important;
+    }
+
+    .background-darken-white {
+        background-color: darken(@color-white, 5%);
+    }
+
+/*
+ * TEXT
+ */
+    .text-red {
+        color: @color-red !important;
+    }
+
+    .text-white {
+        color: @color-white !important;
+    }
+
+    .text-black {
+        color: @color-black !important;
+    }
+
+    .text-color-main {
+        color: @color-main !important;
+    }
+
+    .text-underline {
+        text-decoration: underline;
+    }
+    .text-blue{
+        color: @color-blue !important;
+    }
+    .text-italic {
+        font-style: italic;
+    }
+/*
+ * SPRITE ICONS
+ */
+    .lang{
+        &.en{
+            background: url(/img/flags/english.png) no-repeat;
+            display: inline-block;
+            background-position: 5px 1px;
+            width: 27px;
+            height: 17px;
+            background-size: 16px;
+            &.inside{
+                background-position: 2px 1px;
+                width: 27px;
+                height: 20px;
+                background-size: 18px;
+                position: absolute;
+                top: 3px;
+            }
+            a{
+                width: 100%;
+                padding-left: 25px;
+            }
+        }
+    }
+
+    .sprite {
+        background: url(/img/pa_sprites.png) no-repeat;
+
+        &.visa {
+        	display: inline-block;
+        	background-position: -32px 0px;
+        	width: 27px;
+        	height: 16px;
+        }
+
+        &.master {
+        	display: inline-block;
+        	background-position: -31px -19px;
+        	width: 27px;
+        	height: 16px;
+        }
+
+        &.facebook {
+        	display: inline-block;
+        	background-position: -99px -166px;
+        	width: 27px;
+        	height: 23px;
+        }
+
+        &.twitter {
+        	display: inline-block;
+        	width: 27px;
+        	height: 23px;
+        	background-position: -133px -166px;
+        }
+        &.ps{
+            display: inline-block;
+            background-position: -22px -185px;
+            width: 25px;
+            height: 22px;
+        }
+        &.ai{
+            display: inline-block;
+            background-position: -22px -209px;
+            width: 25px;
+            height: 22px;
+        }
+        &.ar {
+            display: inline-block;
+            background-position: -94px -192px;
+            width: 25px;
+            height: 22px;
+        }
+        &.ue {
+            display: inline-block;
+            background-position: -115px -193px;
+            width: 25px;
+            height: 22px;
+        }
+        &.china{
+            display: inline-block;
+            background-position: -136px -193px;
+            width: 25px;
+            height: 25px;
+        }
+        &.eps{
+            display: inline-block;
+            background-position: 0px -234px;
+            width: 85px;
+            height: 72px;
+        }
+        &.tiff{
+            display: inline-block;
+            background-position: 0px -310px;
+            width: 85px;
+            height: 72px;
+        }
+        &.pdf{
+            display: inline-block;
+            background-position: 0px -386px;
+            width: 85px;
+            height: 72px;
+        }
+
+    }
+    .sprite-header{
+        &.print{
+            background: url(/img/print.svg) no-repeat;
+            display: inline-block;
+            background-position: 9px 6px;
+            width: 45px;
+            height: 30px;
+        }
+        &.design{
+            background: url(/img/design.svg) no-repeat;
+            display: inline-block;
+            background-position: 10px 5px;
+            width: 45px;
+            height: 30px;
+        }
+        &.templates{
+            background: url(/img/templates.svg) no-repeat;
+            display: inline-block;
+            margin-left: 10px;
+            background-position: -10px -11px;
+            width: 44px;
+            height: 30px;
+            background-size: 55px;
+        }
+        &.papers{
+            background: url(/img/samples.svg) no-repeat;
+            display: inline-block;
+            background-position: 8px 6px;
+            width: 45px;
+            height: 30px;
+            background-size: 25px;
+        }
+        &.info{
+            background: url(/img/info.svg) no-repeat;
+            display: inline-block;
+            background-position: 11px 4px;
+            width: 45px;
+            height: 30px;
+            background-size: 22px;
+        }
+        &.delivery{
+            background: url(/img/delivery.svg) no-repeat;
+            display: inline-block;
+            background-position: 10px 8px;
+            width: 45px;
+            height: 30px;
+        }
+        &.contact{
+            background: url(/img/contacts.svg) no-repeat;
+            display: inline-block;
+            background-position: 11px 6px;
+            width: 45px;
+            height: 30px;
+        }
+        &.cart{
+            background: url(/img/cart.svg) no-repeat;
+            display: inline-block;
+                background-position: 10px 8px;
+            width: 45px;
+            height: 30px;
+        }
+
+    }
+    .main-header{
+        .nav-menu{
+            ul{
+                li{
+                    &:hover,&:active,&:focus{
+                        .sprite-header{
+                            background: url(/img/pa-icon-sprite.png) no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+/*
+ * CIRCULAR NUMBER
+ */
+    .circular-number {
+        display: inline-block;
+        width: 30px;
+        line-height: 21px;
+        padding: 3px 7px;
+        font-size: 16px;
+        color: @color-black;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        background-color: @color-white;
+        border-radius: 19px;
+        border: 2px solid lighten(@color-black, 20%);
+        font-weight: 500;
+    }
+
+/*
+ * Button Custom Design
+ */
+    .btn {
+        &.btn-custom {
+            // background-color: darken(@color-main, 3%);
+            border: 1px solid darken(@color-main, 3%);
+            color: @color-white;
+            font-size: 20px;
+            color: @color-white;
+            .gradient(lighten(@color-main, 5%), @color-main, darken(@color-main, 5%));
+            .cross-browser(border-radius, 2px);
+
+            &:hover {
+                .gradient(@color-main, darken(@color-main, 3%), darken(@color-main, 8%));
+                border: 1px solid lighten(@color-main, 7%);
+            }
+
+            &.btn-small {
+                font-size: 14px;
+            }
+
+        }
+        &.paginate-directive-btn{
+            border: 1px solid darken(@color-white, 40%);
+        }
+        &.btn-custom-rounded {
+            .cross-browser(border-radius, 3px);
+        }
+        &.btn-flat-custom{
+            color: @color-white;
+            font-size: 20px;
+            color: @color-white;
+            background-color: @color-main;
+
+            &.btn-small {
+                font-size: 14px;
+            }
+        }
+        &.btn-theme-color {
+            background-color : @color-main;
+            border-color     : @color-main;
+            color            : @color-white;
+            &:hover {
+                background-color : darken(@color-main, 10%);
+                border-color     : darken(@color-main, 10%);
+            }
+        }
+    }
+
+/*
+ * Ng-cloak Hide
+ */
+
+    [ng\:cloak],
+    [ng-cloak],
+    [data-ng-cloak],
+    [x-ng-cloak],
+    .ng-cloak,
+    .x-ng-cloak {
+      display: none !important;
+    }
+
+/*
+ * Image Container retain, Aspect Ratio
+ */
+    .image_container {
+        // clear: both;
+        position: relative;
+        padding: 5px;
+        height: 300px;
+
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            vertical-align: middle;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-style: none;
+            -webkit-transition: all 2s ease-out;
+          transition: all 2s ease-out;
+          -ms-interpolation-mode: bicubic;
+          cursor: pointer; cursor: hand;
+
+        }
+    }
+
+    .block-ui-message {
+      background-color: #6C6C6C;
+      color: #f5f5f5;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+
+
+/*
+ * ANIMATE
+ */
+ .animate {
+    &.left-right {
+        .cross-browser(animation, animation-jumping-right .4s linear);
+        .cross-browser(animation-iteration-count, infinite);
+    }
+    @-webkit-keyframes
+        animation-jumping-right {
+            0% {
+                margin-left: 0px;
+                margin-right: 0px;
+                }
+            50% { margin-left: 5px;
+                    margin-right: -5px;
+                }
+            100% { margin-left: 0px;
+                    margin-right: -0px;
+                }
+        }
+ }
+
+
+/*
+ * BORDER
+ */
+
+    .no-bord {
+        border-color: transparent !important;
+    }
+
+    .l-bord {
+        border-left: 1px solid darken(@color-white, 20%) !important;
+    }
+
+    .t-bord {
+        border-top: 1px solid darken(@color-white, 20%) !important;
+    }
+
+    .r-bord {
+        border-right: 1px solid darken(@color-white, 20%) !important;
+    }
+
+    .b-bord {
+        border-bottom: 1px solid darken(@color-white, 20%) !important;
+    }
+
+
+/*
+ * MARGIN
+ */
+
+    .mar0 {
+        margin: 0 !important;
+    }
+
+    .margin-auto {
+        margin: auto !important;
+    }
+
+    .l-mar {
+        margin-left: 5px !important;
+    }
+
+    .t-mar {
+        margin-top: 5px !important;
+    }
+
+    .t-mar20 {
+        margin-top: 20px !important;
+    }
+
+    .r-mar {
+        margin-right: 5px !important;
+    }
+
+    .b-mar {
+        margin-bottom: 5px !important;
+    }
+    .b-mar20{
+        margin-bottom: 20px !important;
+    }
+
+/*
+ * MARGIN
+ */
+
+    .pad0 {
+        padding: 0 !important;
+    }
+
+    .l-pad {
+        padding-left: 5px !important;
+    }
+
+    .t-pad {
+        padding-top: 5px !important;
+    }
+
+    .r-pad {
+        padding-right: 5px !important;
+    }
+
+    .b-pad {
+        padding-bottom: 5px !important;
+    }
+    .b-pad10 {
+        padding-bottom: 10px !important;
+    }
+
+/*
+ * FONTS
+ */
+
+    .font-size-12 {
+        font-size: 12px;
+    }
+
+    .font-size-14 {
+        font-size: 14px;
+    }
+
+    .font-size-16 {
+        font-size: 16px;
+    }
+
+    .font-size-18 {
+        font-size: 18px;
+    }
+/*
+ * CHOSEN
+ */
+ .has-error {
+    .chosen-container {
+        a {
+            border-color: @border-color-has-error;
+        }
+    }
+ }
