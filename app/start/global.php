@@ -31,25 +31,9 @@ ClassLoader::addDirectories(array(
 |
 */
 
-Log::useFiles(storage_path().'/logs/laravel.log');
+$logFile = 'log-'.php_sapi_name().'.txt';
+Log::useDailyFiles(storage_path().'/logs/'.$logFile);
 
-/*
-|--------------------------------------------------------------------------
-| Application Error Handler
-|--------------------------------------------------------------------------
-|
-| Here you may handle any errors that occur in your application, including
-| logging them or displaying custom views for specific errors. You may
-| even register several error handlers to handle different types of
-| exceptions. If nothing is returned, the default error view is
-| shown, which includes a detailed stack trace during debug.
-|
-*/
-
-App::error(function(Exception $exception, $code)
-{
-	Log::error($exception);
-});
 
 /*
 |--------------------------------------------------------------------------
@@ -67,6 +51,30 @@ App::down(function()
 	return Response::make("Be right back!", 503);
 });
 
+
+/*
+|--------------------------------------------------------------------------
+| Require Listener for All Exceptions Errors
+|--------------------------------------------------------------------------
+|
+| Loading default values, that we need for our system.
+|
+*/
+require app_path().'/exception-listener.php';
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Require The Constants File
+|--------------------------------------------------------------------------
+|
+| Loading default values, that we need for our system.
+|
+*/
+require app_path().'/constants.php';
+
 /*
 |--------------------------------------------------------------------------
 | Require The Filters File
@@ -77,5 +85,16 @@ App::down(function()
 | definitions instead of putting them all in the main routes file.
 |
 */
-
 require app_path().'/filters.php';
+
+
+/*
+|--------------------------------------------------------------------------
+| Require The Functions File
+|--------------------------------------------------------------------------
+|
+| Load our common methods that we can used, to help in developing our 
+| system.
+|
+*/
+require app_path().'/functions.php';;

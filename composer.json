@@ -4,27 +4,30 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.2.*",
-		"kmd/logviewer": "1.2.0",
-		"nuovo/spreadsheet-reader": "0.5.11"
+		"laravel/framework": "4.2.17",
+		"cartalyst/sentry": "2.1.5",
+		"pda/pheanstalk": "v2.1.0",
+		"barryvdh/laravel-translation-manager": "0.1.2",
+		"kmd/logviewer": "1.2.1",
+		"guzzlehttp/guzzle": "5.3.0"
 	},
 	"autoload": {
 		"classmap": [
 			"app/commands",
-			"app/constants",
 			"app/controllers",
-			"app/events",
-			"app/interfaces",
-			"app/lib",
 			"app/models",
-            "app/queues",
-			"app/repositories",
-			"app/routes",
-            "app/validators",
 			"app/database/migrations",
 			"app/database/seeds",
-			"app/tests/TestCase.php"
-		]
+			"app/tests/TestCase.php",
+			"app/constants",
+			"app/interfaces",
+			"app/lib",
+			"app/repositories",
+			"app/routes"
+		],
+		"psr-0": {
+            "SystemCore\\": "app/lib/system/src"
+        }
 	},
 	"scripts": {
 		"post-install-cmd": [
