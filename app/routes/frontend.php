@@ -23,4 +23,10 @@ Route::group( array('prefix' => '/','namespace' => 'Frontend' ), function() {
         );
 
     });
+
+    Route::controller( '/', 'FrontendController',
+        [
+            'getIndex' => FRONTEND_INDEX
+        ]
+    );
 });

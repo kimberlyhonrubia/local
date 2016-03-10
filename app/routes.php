@@ -15,9 +15,3 @@ foreach (glob(__DIR__ . '/routes/*.php') as $route_file)
 	require $route_file;
 
 
-Route::get('/', function()
-{
-	pre(route(FRONTEND_MAP_INDEX)); 
-	exit;
-	return View::make('hello');
-});

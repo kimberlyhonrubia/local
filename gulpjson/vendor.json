@@ -64,9 +64,9 @@
 	{
 		"filename"	: "snapsvg.js",
 		"files": [
-			"vendor/snapsvg/snap.svg-min.js",
-			"vendor/snapsvg/snap-freetransform.js"
+			"snapsvg/snap.svg-min.js",
+			"snapsvg/snap-freetransform.js"
 		]
-	},
+	}
 
 ]
